@@ -28,8 +28,8 @@ Este proyecto es una aplicación web simple para registrar productos, utilizando
 
 1. Clonar este repositorio en tu servidor local.
 2. Crear una base de datos PostgreSQL y ejecutar `sql/init_db.sql`.
-3. Configurar la conexión a la base de datos en `conexion.php`.
-4. Abrir `formulario.html` en el navegador local (ej: `http://localhost/DesisTest/formulario.html`).
+3. Configurar la conexión a la base de datos en `db.php`.
+4. Abrir `index.php` en el navegador local (ej: `http://localhost/DesisTest/index.php`).
 
 ## Validaciones
 
