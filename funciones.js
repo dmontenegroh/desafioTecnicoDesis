@@ -101,7 +101,7 @@ async function cargarSucursales() {
             select.value = sucursales[0].id;
         }
 
-    } catch (error) {cr
+    } catch (error) {
         console.error('Error al cargar las sucursales:', error);
         alert('Error al cargar las sucursales');
     }
