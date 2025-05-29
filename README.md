@@ -11,7 +11,7 @@ Este proyecto es una aplicación web simple para registrar productos, utilizando
 - **PDO** para consultas seguras a la base de datos
 
 ## Estructura
-
+```
 /
 ├── sql/
 │ └── init_db.sql
@@ -23,7 +23,7 @@ Este proyecto es una aplicación web simple para registrar productos, utilizando
 ├── LEEME.txt
 ├── styles.css
 ├── README.md
-
+```
 ## Instalación
 
 1. Clonar este repositorio en tu servidor local.
