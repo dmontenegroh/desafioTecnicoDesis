@@ -27,14 +27,14 @@
 
                 <label for="bodega">Bodega</label>
                 <select id="bodega" name="bodega" class="form-select">
-                    <option value="">-- Seleccione una Bodega --</option>
+                    <option value=""></option>
                 </select>
             </div>
 
             <div class="form-group">
                 <label for="sucursal">Sucursal</label>
                 <select id="sucursal" name="sucursal" class="form-select">
-                    <option value="">-- Seleccione una Sucursal --</option>
+                    <option value=""></option>
                 </select>
             </div>
 
@@ -42,7 +42,7 @@
             <div class="form-group">
                 <label for="moneda">Moneda</label>
                 <select id="moneda" name="moneda" class="form-select">
-                    <option value="">-- Seleccione una Moneda --</option>
+                    <option value=""></option>
                 </select>
             </div>
 

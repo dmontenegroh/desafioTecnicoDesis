@@ -35,7 +35,7 @@ document.getElementById('btnGuardar').addEventListener('click', async (e) => {
             alert('Producto guardado exitosamente');
             form.reset();
 
-            document.getElementById('sucursal').innerHTML = '<option value="">-- Seleccione una sucursal --</option>';
+            document.getElementById('sucursal').innerHTML = '<option value=""></option>';
 
         } else {
             alert('Error: ' + result.message);
@@ -80,7 +80,7 @@ async function cargarSucursales() {
 
     const blankOption = document.createElement('option');
     blankOption.value = "";
-    blankOption.text = "-- Seleccione una sucursal --";
+    blankOption.text = "";
     select.appendChild(blankOption);
 
 
@@ -97,7 +97,11 @@ async function cargarSucursales() {
             select.appendChild(option);
         });
 
-    } catch (error) {
+        if (sucursales.length > 0) {
+            select.value = sucursales[0].id;
+        }
+
+    } catch (error) {cr
         console.error('Error al cargar las sucursales:', error);
         alert('Error al cargar las sucursales');
     }
