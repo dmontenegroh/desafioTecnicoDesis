@@ -1,9 +1,9 @@
 <?php 
 
-$host = 'localhost';
-$dbname = 'bodegabd';
-$user = 'postgres';
-$password = 'dmont.cl';
+$host = '';
+$dbname = '';
+$user = '';
+$password = '';
 
 try {
     $pdo = new PDO("pgsql:host=$host;dbname=$dbname", $user, $password, [
