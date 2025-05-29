@@ -97,9 +97,6 @@ async function cargarSucursales() {
             select.appendChild(option);
         });
 
-        if (sucursales.length > 0) {
-            select.value = sucursales[0].id;
-        }
 
     } catch (error) {
         console.error('Error al cargar las sucursales:', error);
