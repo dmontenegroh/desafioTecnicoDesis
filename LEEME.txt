@@ -1,0 +1,34 @@
+SISTEMA DE REGISTRO DE PRODUCTOS
+--------------------------------
+
+El proyecto corresponde a la prueba técnica solicitada y consiste en un formulario HTML que permite registrar productos en una base de datos PostgreSQL, con validaciones en JavaScript, comunicación con PHP puro (sin frameworks) y carga dinámica de datos vía AJAX.
+
+REQUISITOS
+----------
+- PHP 8.4
+- PostgreSQL 17.2
+- Servidor Apache o compatible con PHP
+
+INSTALACIÓN
+-----------
+1. Clonar el repositorio o descargar el código desde la URL pública.
+2. Crear una base de datos en PostgreSQL (ej: `registro_productos`).
+3. Importar el archivo `sql/init_db.sql` en esa base de datos.
+4. Configurar las credenciales de conexión en `conexion.php`:
+   - `$host`, `$dbname`, `$user`, `$password`
+5. Ejecutar el proyecto desde un entorno local (ej: http://localhost/DesisTest/formulario.html)
+6. Asegurarse de tener permisos para escritura en la base de datos.
+
+ARCHIVOS CLAVE
+--------------
+- `index.php`     → Pagina del formulario
+- `funciones.js`           → Validaciones + carga dinámica vía fetch/AJAX
+- `guardar_producto.php`→ Inserción de producto y materiales
+- `api_datos.php`       → Carga de bodegas, sucursales, monedas y verificación de código
+- `db.php`        → Conexión a base de datos
+- `sql/init_db.sql`     → Script SQL para crear estructura y datos base
+
+DATOS ESTÁTICOS
+---------------
+- Materiales están definidos directamente en HTML.
+- Bodegas, Sucursales y Monedas se cargan dinámicamente desde la base de datos.
