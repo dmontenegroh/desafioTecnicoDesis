@@ -14,9 +14,9 @@ INSTALACIÓN
 1. Clonar el repositorio o descargar el código desde la URL pública.
 2. Crear una base de datos en PostgreSQL (ej: `registro_productos`).
 3. Importar el archivo `sql/init_db.sql` en esa base de datos.
-4. Configurar las credenciales de conexión en `conexion.php`:
+4. Configurar las credenciales de conexión en `db.php`:
    - `$host`, `$dbname`, `$user`, `$password`
-5. Ejecutar el proyecto desde un entorno local (ej: http://localhost/DesisTest/formulario.html)
+5. Ejecutar el proyecto desde un entorno local (ej: http://localhost/DesisTest/index.php)
 6. Asegurarse de tener permisos para escritura en la base de datos.
 
 ARCHIVOS CLAVE
